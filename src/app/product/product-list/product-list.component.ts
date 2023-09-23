@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Iproducto } from '../iproducto';
 
  
 
@@ -24,11 +25,13 @@ export class ProductListComponent {
 
   muestraImg:boolean=true;
 
-  listFiler:string='';
+  listFilter:string='';
 
- 
+  showImage():void{
+    this.muestraImg=!this.muestraImg;
+ }
 
-  productos:any[]=[
+  productos:Iproducto[]=[
 
     {
 
